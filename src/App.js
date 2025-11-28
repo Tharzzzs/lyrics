@@ -24,6 +24,12 @@ function App() {
     }
   };
 
+  const handleClear = () => {
+    setAllLyrics([]);
+    setActiveSinger(null);
+    setInputValue('');
+  };
+
   const handleKeyPress = (e) => {
     if (e.key === 'Enter') {
       handleAddLyric();
@@ -103,6 +109,10 @@ function App() {
           </div>
         ))}
       </div>
+
+      <button className="clear-btn" onClick={handleClear}>
+        CLEAR ALL
+      </button>
     </div>
   );
 }

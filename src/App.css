@@ -104,3 +104,23 @@ h1 {
     transform: translateY(0);
   }
 }
+
+
+
+.clear-btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.clear-btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
